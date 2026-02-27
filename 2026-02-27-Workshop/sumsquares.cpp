@@ -14,6 +14,7 @@ void sumofsquares(long Nmax)
     long total = 0;
     for (long ii = 1; ii < Nmax; ii++) {
         total += ii*ii;
+        std::println("{}\t{}", ii+1, total);
     }
-    std::println("{}", total);
+    // std::println("{}", total);
 }
