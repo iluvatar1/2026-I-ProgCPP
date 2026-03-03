@@ -5,7 +5,7 @@
 bool isprime(long n);
 
 
-int main()
+int main(int argc, char **argv)
 {
     long n = 10000000019;
     //std::println("Dame un numero:");
