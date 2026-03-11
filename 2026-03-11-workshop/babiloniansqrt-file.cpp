@@ -1,6 +1,7 @@
 // calcula la raiz cuadrada de un numero usando el metodo de los babilonios
 #include <print>
 #include <cstdio>
+#include <cmath>
 
 double babilonian_sqrt(double s, int niter, std::string fname);
 
