@@ -1,4 +1,4 @@
-// Goal: Encontrar el columen en la ecuacion de Van der Walls
+// Goal: Encontrar el volumen en la ecuacion de Van der Walls
 // (P + a/V^2)(V-b) = NkT = RT
 
 #include <cmath>
