@@ -17,7 +17,7 @@ int main (int argc, char *argv[])
 {
   double x = 10.234;
   double h = 1.0e-6;
-  std::println("{}", dforward(x, h, fun));
+  std::println("{}", dforward(x, h, fun) );
   std::println("{}", dcentral(x, h, fun));
   std::println("{}", dcentral(x, h, g));
   
