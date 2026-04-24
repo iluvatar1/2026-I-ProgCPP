@@ -25,3 +25,11 @@ double richardson_central(double x, double h, int p, fptr f)
     double aux3 = std::pow(2.0, p);
     return (aux3*aux2 - aux1)/(aux3 - 1);
 }
+
+double richardson(double x, double h, int p, fptr f, derivptr algderiv) 
+{
+    double aux1 = algderiv(x, h, f);
+    double aux2 = algderiv(x, h/2, f);
+    double aux3 = std::pow(2.0, p);
+    return (aux3*aux2 - aux1)/(aux3 - 1);
+}
