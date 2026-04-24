@@ -10,10 +10,10 @@ int main (int argc, char *argv[])
   double x = 10.234;
   double h = 1.0e-6;
   std::println("FORWARD  :     {}", dforward(x, h, fun) );
-  std::println("R_FORWARD:     {}", richardson_forward(x, h, 1, fun) );
+  //std::println("R_FORWARD:     {}", richardson_forward(x, h, 1, fun) );
   std::println("R_FORWARD_NEW: {}", richardson(x, h, 1, fun, dforward) );
   std::println("CENTRAL:       {}", dcentral(x, h, fun));
-  std::println("R_CENTRAL:     {}", richardson_central(x, h, 2, fun));
+  //std::println("R_CENTRAL:     {}", richardson_central(x, h, 2, fun));
   std::println("R_CENTRAL_NEW: {}", richardson(x, h, 2, fun, dcentral));
   std::println("{}", dcentral(x, h, g));
   
