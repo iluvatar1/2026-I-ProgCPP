@@ -12,6 +12,7 @@ int main (int argc, char *argv[])
   std::println("{}", dforward(x, h, fun) );
   std::println("{}", richardson_forward(x, h, 1, fun) );
   std::println("{}", dcentral(x, h, fun));
+  std::println("{}", richardson_central(x, h, 2, fun));
   std::println("{}", dcentral(x, h, g));
   
   return 0;
